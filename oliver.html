@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <title>Matretter</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
     <div id="overArea">
         <h1>Oliver's matretter</h1>
         <div id="mainArea">
-
+            <!-- Div for navigasjonsbar -->
             <div class="navbar">
                 <a href=""><i class="emilieLink"></i> Emilie</a>
                 <a href=""><i class="minhLink"></i> Minh</a>
@@ -21,6 +20,8 @@
                 <a href=""><i class="fellessideLink"></i> Fellesside</a>
             </div>
             <div id="secondArea">
+                <h2>Favoritter</h2>
+                <!-- Rad med de små velgbare bildene -->
                 <div class="row">
                     <div class="column">
                         <img src="imgs/pizza.jpg" alt="Pizza" style="width:100%" onclick="showImg(this);">
@@ -29,13 +30,13 @@
                         <img src="imgs/wok.jpg" alt="Wok" style="width:100%" onclick="showImg(this);">
                     </div>
                     <div class="column">
-                        <img src="imgs/pasta.jpg" alt="Pasta" style="width:100%" onclick="showImg(this);">
+                        <img src="imgs/pasta.jpg" alt="Pasta carbonara" style="width:100%" onclick="showImg(this);">
                     </div>
                     <div class="column">
                         <img src="imgs/chili.jpg" alt="Chili con carne" style="width:100%" onclick="showImg(this);">
                     </div>
                 </div>
-
+                <!-- Div elementet som skaper og lager lukk knappen på det store bildet. -->
                 <div class="container">
                     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
                     <img id="expandedImg" style="width:100%">
@@ -43,27 +44,48 @@
                 </div>
             </div>
             <div id="secondArea">
-                <h2>Informasjon</h2>
+                <h2>Oppskrifter</h2>
 
+                <!-- Tildeler fir grid objekter som kan innehode tekst og biler -->
                 <div class="grid-container">
                     <div class="grid-item item1">
-                        <h3></h3>
-                        <p></p>
+                        <h3>Pizza</h3>
+                        <p>
+                            <a href="https://www.matprat.no/oppskrifter/kos/pizzadeig/">Hjemmelaget pizzadeig
+                                oppskriftsside.</a>
+                            <br>
+                            Opphavsrett fra <a href="https://www.matprat.no/">matprat.no</a>
+                        </p>
 
                     </div>
                     <div class="grid-item item2">
-                        <h3></h3>
-                        <p></p>
+                        <h3>Wok</h3>
+                        <p>
+                            <a href="https://www.matprat.no/oppskrifter/sunn/wok-med-kylling-og-nudler/">Wok
+                                oppskriftsside.</a>
+                            <br>
+                            Opphavsrett fra <a href="https://www.matprat.no/">matprat.no</a>
+                        </p>
 
                     </div>
                     <div class="grid-item item3">
-                        <h3></h3>
-                        <p></p>
+                        <h3>Pasta carbonara</h3>
+                        <p>
+                            <a href="https://www.matprat.no/oppskrifter/kos/pasta-carbonara/">Pasta carbonara
+                                oppskriftsside.</a>
+                            <br>
+                            Opphavsrett fra <a href="https://www.matprat.no/">matprat.no</a>
+                        </p>
 
                     </div>
                     <div class="grid-item item4">
-                        <h3></h3>
-                        <p></p>
+                        <h3>Chili con carne</h3>
+                        <p>
+                            <a href="https://www.matprat.no/oppskrifter/rask/chili-con-carne/">Chili con carne
+                                oppskriftsside.</a>
+                            <br>
+                            Opphavsrett fra <a href="https://www.matprat.no/">matprat.no</a>
+                        </p>
 
                     </div>
                 </div>
@@ -73,6 +95,7 @@
     </div>
 
     <script>
+        //Forstørrer det utvalgte bildet nedenfor
         function showImg(imgs) {
             var expandImg = document.getElementById("expandedImg");
             var imgText = document.getElementById("imgtext");
