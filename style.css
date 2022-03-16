@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700|Fredoka+One");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+body {
+  background-color: #d4d3d3;
+}
+
+td,
+th {
+  border: 3px solid #74ced4;
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(206, 206, 206);
+}
+
+#overArea {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fredoka One";
+  font-size: 10vw;
+  text-align: center;
+  color: #74ced4;
+}
+
+h2 {
+  font-family: "Fredoka One";
+  font-size: 30pt;
+  text-align: center;
+  color: #89c9ce;
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-size: 25pt;
+  text-align: left;
+  color: #89c9ce;
+}
+
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25pt;
+  text-align: left;
+  color: #89c9ce;
+}
+
+h5 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 20pt;
+  text-align: left;
+  color: #7cb7bb;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-size: 20pt;
+  text-align: left;
+  color: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(224, 218, 218);
+  overflow: auto;
+  margin: 2% 0px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5pt;
+}
+
+.navbar a {
+  float: left;
+  padding: 12pt;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 2vw;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgba(175, 175, 175, 0.815);
+}
+
+.navbar a.active {
+  background-color: #74ced4;
+}
+
+@media screen and (max-width: 500pt) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#mainArea {
+  text-align: center;
+  background-color: rgb(219, 206, 190);
+  margin: 3% 10%;
+  padding: 30pt 30pt;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#banner {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#secondArea {
+  text-align: center;
+  background-color: rgb(224, 218, 218);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  margin: 2% 0px;
+  padding: 10pt;
+  border-radius: 5pt;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20pt;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 5pt;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+  padding: 0px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10pt;
+  background-color: #ffffff00;
+  padding: 10pt;
+}
+
+.grid-item {
+  background-color: rgb(238, 238, 238);
+  text-align: center;
+  border-radius: 5pt;
+  padding: 10pt;
+  margin: 15pt;
+  font-size: 30pt;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+
+.item3 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.item4 {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+
+button {
+  background-color: #89dadd; /* Green */
+  border: none;
+  color: white;
+  padding: 20pt;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25pt;
+  margin: 10pt;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 5pt;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
